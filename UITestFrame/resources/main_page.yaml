@@ -1,0 +1,8 @@
+goto_address_book_page:
+  - by: xpath
+    locator: '//*[@text="通讯录"]'
+    action: wait_clickable
+
+  - by: xpath
+    locator: '//*[@text="通讯录"]'
+    action: click

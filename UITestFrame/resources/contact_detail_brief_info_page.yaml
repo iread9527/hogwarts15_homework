@@ -1,0 +1,6 @@
+click_settings_button:
+  - by: xpath
+    locator: '//*[@text="个人信息" and @clickable="true"]/../../../../../../
+              android.widget.RelativeLayout/android.widget.LinearLayout[2]
+              //android.widget.TextView'
+    action: click

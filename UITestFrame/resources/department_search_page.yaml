@@ -1,0 +1,13 @@
+search_member:
+  - by: xpath
+    locator: '//*[@text="搜索"]'
+    content: aaraaa
+    action: send
+
+  - by: xpath
+    locator: '//*[@text="aaraaa" and @class="android.widget.TextView"]'
+    action: wait_visibility
+
+  - by: xpath
+    locator: '//*[@text="aaraaa" and @class="android.widget.TextView"]'
+    action: click

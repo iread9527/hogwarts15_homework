@@ -1,0 +1,18 @@
+add_member:
+  - by: xpath
+    locator: '//*[@text="我的企业" and @clickable="true"]/../../../../../../
+               android.widget.RelativeLayout/android.widget.LinearLayout[2]/
+               android.widget.RelativeLayout[1]/android.widget.TextView'
+    action: click
+
+  - by: -android uiautomator
+    locator: 'new UiScrollable(new UiSelector().scrollable(true).instance(0))
+             .scrollIntoView(new UiSelector().text("添加成员").instance(0));'
+    action: click
+
+click_search_button:
+  - by: xpath
+    locator: '//*[@text="我的企业" and @clickable="true"]/../../../../../../
+             android.widget.RelativeLayout/android.widget.LinearLayout[2]/
+             android.widget.RelativeLayout[1]/android.widget.TextView'
+    action: click
