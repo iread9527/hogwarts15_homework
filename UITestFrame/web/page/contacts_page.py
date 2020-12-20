@@ -30,4 +30,5 @@ class ContactsPage(BasePage):
         # 使用搜索功能校验创建的用户名
         self.find(MobileBy.CSS_SELECTOR, '#memberSearchInput').send_keys(user_name)
         created_user_name = self.find(MobileBy.CSS_SELECTOR, '.ww_searchResult_title_peopleName').text
-        assert created_user_name == user_name
+        return created_user_name
+

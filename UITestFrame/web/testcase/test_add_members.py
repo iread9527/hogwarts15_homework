@@ -17,4 +17,6 @@ class TestAddMembers:
         user_name = 'user' + utils.time_stamp()
         account_id = 'account' + utils.time_stamp()
         phone_num = utils.random_phone()
-        self.main_page.goto_contacts_page().add_members(user_name=user_name, account_id=account_id, phone_num=phone_num)
+        created_user_name = self.main_page.goto_contacts_page().add_members(user_name=user_name, account_id=account_id,
+                                                                            phone_num=phone_num)
+        assert created_user_name == user_name
