@@ -1,0 +1,26 @@
+add_contact:
+  - by: xpath
+    locator: "//*[contains(@text, '姓名')]/../*[@text='必填']"
+    content: 'aaraaa'
+    action: send
+
+  - by: xpath
+    locator: "//*[contains(@text, '性别')]/..//*[@text='男']"
+    action: click
+
+  - by: xpath
+    locator: "//*[@text='女']"
+    action: custom_wait
+
+  - by: xpath
+    locator: "//*[@text='男']"
+    action: click
+
+  - by: xpath
+    locator: '//*[contains(@text, "手机") and contains(@class, "TextView")]/..//android.widget.EditText'
+    content: '18717303655'
+    action: send
+
+  - by: xpath
+    locator: "//*[@text='保存']"
+    action: click
